@@ -4,7 +4,7 @@ AI-powered sponsor workflow agent for participatory sustainability campaigns tie
 
 ## What This Builds On
 
-This project builds on the Nature Backers Apex Hackathon prototype, which demonstrated QR-based fan participation, project voting, HCS participation records, proof-of-participation token concepts, and sponsor dashboards.
+This project builds on the Nature Backers, Hedera Apex Hackathon prototype, which demonstrated QR-based fan participation, project voting, HCS participation records, proof-of-participation token concepts, and sponsor dashboards.
 
 ## What Is New
 
@@ -20,10 +20,23 @@ The Sponsor Agent helps a sponsor:
 
 ## Hedera AI Bounty Focus
 
-Target track: Week 2 — Enterprise Agent + Plugin
+## Week 1: Fun Basic Hedera Agent
 
-Potential Week 1 extension:
-QR-triggered fan engagement agent for live event participation.
+For Week 1, the project explores a lightweight fan-facing interaction layer for the broader Sponsor Agent vision.
+
+Fans scan a QR code at a live women’s sports event and interact with the Nature Backers Sponsor Agent for Fans, which:
+
+explains local sustainability projects
+guides fan participation
+supports project exploration and voting
+logs lightweight participation events through Hedera testnet concepts
+
+The Week 1 prototype focuses on:
+
+QR-triggered fan engagement
+AI-powered sustainability storytelling
+lightweight Hedera Agent Kit integration
+simple participation event logging
 
 ## Prior Hello Future Hedera Apex Hackathon 2026 Work
 
