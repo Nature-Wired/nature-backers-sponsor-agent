@@ -24,22 +24,14 @@ The goal is to transform passive sponsorship into transparent, participatory sus
 This project targets the Hedera AI Bounty:
 **Week 2 — Enterprise Agent + Plugin**
 
-The prototype explores how enterprise AI agents can reason over verified sustainability metadata surfaced through evolving Hedera Guardian Indexer APIs and GBBC-aligned sustainability standards to generate sponsor participation campaigns and sustainability engagement workflows.
-
-The project also explores a Guardian Indexer plugin layer for Hedera Agent Kit workflows, enabling enterprise agents to reason over structured sustainability metadata including:
-
-* SDG mappings
-* methodologies
-* project attributes
-* participation logic
-* community relevance
-
 # Core Concept
 
 The Nature Backers Sponsor Agent acts as an AI-powered sustainability campaign advisor for sponsors of women’s sports events.
 The workflow is intentionally human-in-the-loop.
 AI generates recommendations and participation insights, while sponsors review and approve campaigns before launch.
-
+This bounty explores two primary AI-Assisted Concepts
+1. AI-Assisted Campaign Creation (Before the Event)
+2. AI-Assisted Interpretation & Reporting (After the Event)
 
 # 1. AI-Assisted Campaign Creation (Before the Event)
 
@@ -76,7 +68,6 @@ before a live campaign is published.
 
 # Example Campaign Workflow
 
-```text id="vk4o7f"
 Sponsor Inputs Event Details
         ↓
 AI Sponsor Agent Queries Verified Project Data
@@ -86,7 +77,6 @@ AI Generates Campaign Concepts + Project Ballots
 Sponsor Reviews & Approves Campaign
         ↓
 Approved Campaign Published for Live Fan Activation
-```
 
 # Example Sponsor Input
 
