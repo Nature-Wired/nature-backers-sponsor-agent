@@ -1,198 +1,187 @@
 # Nature Backers Sponsor Agent
 
-AI-powered sponsor workflow agent for participatory sustainability campaigns tied to women’s sports and verified sustainability projects.
+AI-powered sponsor workflow agent for participatory sustainability campaigns tied to women’s sports, live fan engagement, and verified sustainability projects.
 
-# Overview
+## Overview
 
-Nature Backers Sponsor Agent explores how enterprise AI agents can help sponsors design, orchestrate, and analyze interactive sustainability campaigns connected to live women’s sports events.
+Nature Backers Sponsor Agent helps sponsors design, approve, launch, and analyze sustainability fan engagement campaigns connected to live women’s sports events.
 
-The project combines:
+The project builds on the Nature Backers Hedera Apex Hackathon prototype, which demonstrated QR-based fan participation, project voting, funding unlocks, HCS participation records, proof-of-participation concepts, and sponsor dashboard concepts.
 
-* AI-assisted campaign creation before live events
-* verified sustainability metadata and project discovery
-* sponsor approval workflows
-* participatory fan engagement concepts
-* AI-assisted interpretation and reporting after events
-* Hedera-powered participation infrastructure
+For Week 2, this project adds an AI Sponsor Agent and custom campaign plugin that support enterprise sponsor workflows before and after an event.
 
-The goal is to transform passive sponsorship into transparent, participatory sustainability engagement.
+## Hedera AI Bounty Focus
 
-# Hedera AI Bounty Focus
+**Week 2: Enterprise Agent + Plugin**
 
-## Week 2: Enterprise Agent + Plugin
+This submission demonstrates:
 
-This project targets the Hedera AI Bounty:
-**Week 2 — Enterprise Agent + Plugin**
+- an AI-powered sponsor campaign agent
+- a custom Nature Backers campaign plugin
+- human-in-the-loop sponsor approval
+- Hedera Agent Kit integration
+- HCS records for campaign or participation activity
+- HTS proof-of-participation or sponsor engagement token activity
+- AI-assisted post-event reporting
 
-# Core Concept
+## What This Prototype Demonstrates
 
-The Nature Backers Sponsor Agent acts as an AI-powered sustainability campaign advisor for sponsors of women’s sports events.
-The workflow is intentionally human-in-the-loop.
-AI generates recommendations and participation insights, while sponsors review and approve campaigns before launch.
-This bounty explores two primary AI-Assisted Concepts
-1. AI-Assisted Campaign Creation (Before the Event)
-2. AI-Assisted Interpretation & Reporting (After the Event)
+The Week 2 prototype models a sponsor-funded sustainability activation.
 
-# This Week 2 submission will demonstrate:
+A sponsor defines a campaign funding pool, reviews AI-generated campaign recommendations, approves a campaign, and then receives a post-event report based on fan participation and voting outcomes.
 
-1. An AI Sponsor Agent that helps a sponsor design a sustainability fan engagement campaign before a women’s sports event.
-2. A custom Nature Backers campaign plugin that connects the agent to campaign/project/voting data.
-3. At least two Hedera Agent Kit non-query tools, such as:
-        - HCS topic/message submission for campaign approval or fan participation records
-        - HTS token mint/transfer for proof-of-participation or sponsor/fan reward token
-4. A real commercial-style transaction workflow, such as:
-        - sponsor approves a $5,000 campaign pool
-        - campaign is published
-        - fans participate and receive a proof-of-participation token
-        - voting results trigger funding allocation logic
-        - post-event report summarizes participation, project votes, token activity, and funding unlocked
+The prototype is designed to show:
 
-# 1. AI-Assisted Campaign Creation (Before the Event)
+- campaign creation before a live event
+- project ballot recommendation
+- sponsor approval workflow
+- campaign or participation records on Hedera
+- proof-of-participation token activity
+- funding allocation logic based on fan voting
+- sponsor-facing reporting after the event
 
-Sponsors provide:
+## Example Use Case: Women’s Flag Football Night
 
-* women’s sports event type (flag football, basketball, softball, soccer, etc.)
-* city/location
-* sustainability goals
-* audience engagement objectives
-* optional sponsor funding pool
+A sponsor wants to activate a sustainability campaign during a women’s flag football event in San Francisco.
 
-The Sponsor Agent then:
+Sponsor inputs:
 
-* queries verified sustainability project data through Guardian Indexer APIs and plugin workflows
-* reasons about local project fit and community relevance
-* generates sustainability activation campaign concepts
-* proposes sponsor-ready project ballots and participation structures
-* creates fan-facing sustainability messaging
-* recommends participation mechanics, volunteer opportunities, and reporting logic
-* recommends project rationale and SDG alignment
-* prepares lightweight Hedera participation workflows
+- event type: Women’s Flag Football Night
+- location: San Francisco
+- campaign goal: climate resilience and local community engagement
+- sponsor sustainability pool: $5,000
+- audience objective: fan participation during the live event
 
-Importantly, AI-generated recommendations are not automatically launched.
+The Sponsor Agent generates:
+
+- campaign concept
+- curated sustainability project ballot
+- fan-facing messaging
+- SDG and project rationale
+- voting mechanics
+- funding unlock thresholds
+- lightweight Hedera participation workflow
+
+The sponsor reviews and approves the campaign before launch.
+
+## Human-in-the-Loop Approval
+
+The agent does not autonomously launch campaigns or move sponsor funds.
 
 Sponsors review and approve:
 
-* campaign concepts
-* sustainability projects
-* participation structures
-* funding allocation approaches
-* campaign messaging
+- project selections
+- funding pool
+- voting structure
+- campaign messaging
+- funding allocation logic
+- Hedera transaction actions
 
-before a live campaign is published.
+Only approved actions proceed to execution.
 
-# Example Campaign Workflow
+## Custom Campaign Plugin
 
-Sponsor Inputs Event Details
-        ↓
-AI Sponsor Agent Queries Verified Project Data
-        ↓
-AI Generates Campaign Concepts + Project Ballots
-        ↓
-Sponsor Reviews & Approves Campaign
-        ↓
-Approved Campaign Published for Live Fan Activation
+The custom Nature Backers campaign plugin exposes sponsor workflow actions to the AI agent.
 
-# Example Sponsor Input
+Example plugin functions:
 
-* Women’s Flag Football Night
-* San Francisco
-* Climate resilience + local community engagement
-* Sponsor sustainability pool: $5,000
+- `createCampaignDraft`
+- `recommendProjectBallot`
+- `approveCampaign`
+- `publishCampaign`
+- `recordFanParticipation`
+- `calculateFundingAllocation`
+- `generateSponsorReport`
 
-# Example Sponsor Agent Output
+The plugin connects the AI agent to campaign data, project selection, sponsor approval, fan participation, and reporting logic.
 
-The Sponsor Agent may generate:
+## Hedera Integration
 
-* curated sustainability project ballots
-* campaign themes and storytelling
-* recommended project rationale and SDG alignment
-* voting and participation structures
-* volunteer participation opportunities
-* funding unlock thresholds
-* lightweight Hedera participation workflows
+This prototype uses Hedera Agent Kit to support real testnet actions.
 
-# Example Sustainability Projects
+Planned Hedera actions include:
 
-## Bay Watershed Restoration Initiative
+- HCS message submission for campaign approval or fan participation records
+- HTS token activity for proof-of-participation or sponsor engagement tokens
+- Guardian Indexer APIs or verified sustainability project metadata
+- transparent campaign workflow records for sponsor reporting
+
+## Demo Flow
+
+1. Sponsor enters event and campaign details.
+2. AI Sponsor Agent recommends a campaign concept and project ballot.
+3. Sponsor reviews and approves the campaign.
+4. Campaign approval is recorded through a Hedera workflow.
+5. Fan participation and voting are simulated.
+6. Proof-of-participation or campaign activity is recorded.
+7. Funding allocation logic is calculated from voting outcomes.
+8. AI Sponsor Agent generates a post-event sponsor report.
+
+## Example Sustainability Projects
+
+### Bay Watershed Restoration Initiative
 
 **Category:** Water Conservation / Ecosystem Restoration
-Restore native vegetation and improve water quality across local river basins that feed into the San Francisco Bay.
-**SDGs**
-* Clean Water and Sanitation
-* Climate Action
-* Life on Land
 
-## Urban Cooling Tree Network
+Restores native vegetation and improves water quality across local river basins that feed into the San Francisco Bay.
+
+**Relevant SDGs:**
+
+- Clean Water and Sanitation
+- Climate Action
+- Life on Land
+
+### Urban Cooling Tree Network
+
 **Category:** Urban Climate Resilience
-Expand urban tree canopy across Bay Area neighborhoods to reduce heat, improve air quality, and support biodiversity.
-**SDGs**
-* Sustainable Cities and Communities
-* Climate Action
-* Good Health and Well-being
 
-## Coastal Habitat Recovery Program
+Expands urban tree canopy across Bay Area neighborhoods to reduce heat, improve air quality, and support biodiversity.
+
+**Relevant SDGs:**
+
+- Sustainable Cities and Communities
+- Climate Action
+- Good Health and Well-being
+
+### Coastal Habitat Recovery Program
+
 **Category:** Biodiversity Restoration
-Restore native plants and habitats along the California coast to support pollinators, birds, and resilient coastal ecosystems.
-**SDGs**
-* Life Below Water
-* Life on Land
-* Climate Action
 
-# 2. AI-Assisted Interpretation & Reporting (After the Event)
+Restores native plants and habitats along the California coast to support pollinators, birds, and resilient coastal ecosystems.
 
-After a campaign concludes, the Sponsor Agent may analyze:
+**Relevant SDGs:**
 
-* fan participation levels
-* project voting outcomes
-* funding unlock thresholds reached
-* volunteer engagement patterns
-* SDG/community resonance
-* event-level sustainability engagement trends
+- Life Below Water
+- Life on Land
+- Climate Action
 
-The Sponsor Agent may then generate:
+## AI-Assisted Reporting
 
-* sponsor-facing sustainability reports
-* campaign effectiveness summaries
-* community engagement insights
-* future campaign recommendations
-* sustainability storytelling outputs
+After the campaign, the Sponsor Agent analyzes:
 
-The goal is to help sponsors better understand how communities engage with sustainability initiatives and which environmental themes resonate most strongly with fans and local audiences.
+- fan participation levels
+- project voting outcomes
+- funding thresholds reached
+- proof-of-participation activity
+- SDG and community resonance
+- event-level engagement trends
 
-Importantly, AI-generated insights support sponsor decision-making and future campaign planning rather than replacing human oversight.
+The agent generates sponsor-facing reporting to help sponsors understand what fans engaged with and how future campaigns could be improved.
 
-# Hedera Integration Areas
+## Prior Hedera Apex Hackathon Work
 
-For the Week 2 bounty, this prototype will use Hedera Agent Kit to execute real Hedera testnet actions through the sponsor workflow. The agent will use a custom Nature Backers campaign plugin plus Hedera Agent Kit tools for HCS participation records and HTS proof-of-participation token activity.
-
-Hedera infrastructure provides transparent participation records and event-driven sustainability engagement workflows that can support auditable sponsor participation campaigns.
-
-# Concept Prototype
-
-Sponsor Advisor GPT:
-AI advisor for participatory sustainability campaigns in women’s sports and live events.
-
-https://chatgpt.com/g/g-69c570bf989c81918a48712fe6358365-nature-backers-sponsor-advisor
-
-# Prior Hedera Apex Hackathon 2026 Work
+This project builds on the earlier Nature Backers Apex prototype:
 
 https://github.com/CarbonSustain/nature-wired-apex
 
-This project builds on the earlier Nature Backers Hedera Apex Hackathon prototype, which demonstrated:
+The Apex prototype demonstrated QR-based fan participation, project voting, funding unlock concepts, HCS participation records, proof-of-participation concepts, and sponsor dashboard concepts.
 
-* QR-based fan participation
-* project voting
-* real-time funding unlock concepts
-* HCS participation records
-* proof-of-participation concepts
-* sponsor dashboard concepts
+## Concept Prototype
 
-The original prototype explored how fans at women’s sports events could directly participate in sponsor-supported sustainability initiatives during live events.
+Sponsor Advisor GPT:
 
-As fans participated during a live game, sustainability funding pools could unlock dynamically based on participation thresholds and collective voting outcomes.
+https://chatgpt.com/g/g-69c570bf989c81918a48712fe6358365-nature-backers-sponsor-advisor
 
-# Vision
+## Vision
 
-Nature Backers explores how AI agents, participatory fan experiences, and verified sustainability infrastructure can transform sponsorship into transparent, community-driven environmental participation.
-
-The long-term vision is to enable sponsors of women’s sports to create transparent, verifiable, and community-driven sustainability engagement experiences powered by Hedera infrastructure, real-world participation, and AI-generated sustainability intelligence.
+Nature Backers explores how AI agents, participatory fan experiences, and Hedera infrastructure can transform sponsorship into transparent, community-driven sustainability engagement.
