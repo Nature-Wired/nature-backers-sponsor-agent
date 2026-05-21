@@ -33,6 +33,20 @@ This bounty explores two primary AI-Assisted Concepts
 1. AI-Assisted Campaign Creation (Before the Event)
 2. AI-Assisted Interpretation & Reporting (After the Event)
 
+# This Week 2 submission will demonstrate:
+
+1. An AI Sponsor Agent that helps a sponsor design a sustainability fan engagement campaign before a women’s sports event.
+2. A custom Nature Backers campaign plugin that connects the agent to campaign/project/voting data.
+3. At least two Hedera Agent Kit non-query tools, such as:
+        - HCS topic/message submission for campaign approval or fan participation records
+        - HTS token mint/transfer for proof-of-participation or sponsor/fan reward token
+4. A real commercial-style transaction workflow, such as:
+        - sponsor approves a $5,000 campaign pool
+        - campaign is published
+        - fans participate and receive a proof-of-participation token
+        - voting results trigger funding allocation logic
+        - post-event report summarizes participation, project votes, token activity, and funding unlocked
+
 # 1. AI-Assisted Campaign Creation (Before the Event)
 
 Sponsors provide:
@@ -149,13 +163,7 @@ Importantly, AI-generated insights support sponsor decision-making and future ca
 
 # Hedera Integration Areas
 
-Potential Hedera integrations include:
-
-* Hedera Agent Kit
-* Hedera Consensus Service (HCS)
-* Guardian Indexer APIs
-* future participation and rewards workflows
-* future proof-of-participation concepts
+For the Week 2 bounty, this prototype will use Hedera Agent Kit to execute real Hedera testnet actions through the sponsor workflow. The agent will use a custom Nature Backers campaign plugin plus Hedera Agent Kit tools for HCS participation records and HTS proof-of-participation token activity.
 
 Hedera infrastructure provides transparent participation records and event-driven sustainability engagement workflows that can support auditable sponsor participation campaigns.
 
