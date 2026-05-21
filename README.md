@@ -55,7 +55,7 @@ Sponsor inputs:
 The Sponsor Agent generates:
 
 - campaign concept
-- curated sustainability project ballot
+- curated 3-project sustainability ballot for fan voting
 - fan-facing messaging
 - SDG and project rationale
 - voting mechanics
@@ -106,10 +106,44 @@ Planned Hedera actions include:
 - Guardian Indexer APIs or verified sustainability project metadata
 - transparent campaign workflow records for sponsor reporting
 
+## Workflow Diagram
+
+The prototype follows a human-in-the-loop workflow where the AI agent recommends a campaign, the sponsor approves it, and Hedera records campaign and participation activity.
+
+```mermaid
+graph TD
+    A(Sponsor enters event details) --> B(AI Sponsor Agent)
+    B --> C(Custom Campaign Plugin)
+
+    C --> D(Create campaign draft)
+    C --> E(Recommend 3-project campaign ballot)
+    C --> F(Suggest voting and funding logic)
+
+    D --> G(Sponsor reviews campaign)
+    E --> G
+    F --> G
+
+    G --> H{Sponsor approved}
+    H --> I(Record campaign approval on Hedera)
+    H --> B
+
+    I --> J(Publish QR fan experience)
+    J --> K(Fans vote for projects)
+
+    K --> L(Record participation with HCS)
+    K --> M(Calculate funding allocation)
+
+    L --> N(Record participation token with HTS)
+    M --> O(AI post event analysis)
+    N --> O
+
+    O --> P(Sponsor report and dashboard insights)
+```
+
 ## Demo Flow
 
 1. Sponsor enters event and campaign details.
-2. AI Sponsor Agent recommends a campaign concept and project ballot.
+2. AI Sponsor Agent recommends a campaign concept and 3-project ballot for fan voting.
 3. Sponsor reviews and approves the campaign.
 4. Campaign approval is recorded through a Hedera workflow.
 5. Fan participation and voting are simulated.
@@ -117,7 +151,26 @@ Planned Hedera actions include:
 7. Funding allocation logic is calculated from voting outcomes.
 8. AI Sponsor Agent generates a post-event sponsor report.
 
+### Guardian Project Data
+
+For this Week 2 prototype, the example sustainability projects may be curated sample projects unless real Guardian Indexer project records are available for the demo.
+
+The intended Guardian integration is for the Sponsor Agent to query Guardian Indexer APIs or Guardian-aligned metadata to retrieve verified project attributes such as:
+
+- project name
+- project ID, if available
+- policy ID or methodology, if available
+- location
+- project category
+- SDG alignment
+- verification or token status
+- registry/source reference, if available
+
+The sample projects in this README are used to demonstrate the sponsor workflow and project ballot experience. They should not be interpreted as live Guardian-verified projects unless Guardian project records are explicitly linked.
+
 ## Example Sustainability Projects
+
+The following are sample projects used to demonstrate the campaign ballot experience. They may be replaced with live Guardian Indexer project records if available for the demo.
 
 ### Bay Watershed Restoration Initiative
 
